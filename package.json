@@ -24,6 +24,7 @@
     "test": "mocha -b test/spec && eslint lib/**"
   },
   "dependencies": {
+    "aws-sdk": "^2.7.21",
     "bluebird": "^3.4.6"
   },
   "devDependencies": {
