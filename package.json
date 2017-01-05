@@ -1,7 +1,7 @@
 {
   "name": "@waldo/sqs",
   "version": "0.0.0",
-  "main": "./lib/boot",
+  "main": "./lib/",
   "description": "An AWS SQS wrapper providing high level helper methods.",
   "homepage": "https://github.com/waldo/waldo-node-sqs",
   "bugs": "https://github.com/waldo/waldo-node-sqs/issues",
