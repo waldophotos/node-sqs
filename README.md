@@ -109,6 +109,8 @@ sqs.purge()
 
 ## Release History
 
+- **v0.0.2**, *10 Jan 2017*
+    - Exposed `purge()` method and added protection to only purge test queues.
 - **v0.0.1**, *05 Jan 2017*
     - Big Bang
 
