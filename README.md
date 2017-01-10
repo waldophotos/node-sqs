@@ -81,6 +81,24 @@ sqs.startFetch(function(jobItem) {
 });
 ```
 
+### Purging Jobs
+
+For testing purposes you are allowed to perform the purge operation. To be able to perform the purge it is required to include `test` within the SQS's url.
+
+```js
+const sqsLib = require('@waldo/sqs');
+
+const sqs = sqsLib({
+    sqsUrl: '...',
+    logger: logger,
+});
+
+sqs.purge()
+    .then(function() {
+        console.log('Queue Purged');
+    });
+```
+
 ## Releasing
 
 1. Update the changelog bellow.
@@ -91,6 +109,8 @@ sqs.startFetch(function(jobItem) {
 
 ## Release History
 
+- **v0.0.2**, *10 Jan 2017*
+    - Exposed `purge()` method and added protection to only purge test queues.
 - **v0.0.1**, *05 Jan 2017*
     - Big Bang
 

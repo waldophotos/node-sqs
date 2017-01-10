@@ -3,18 +3,18 @@
   "version": "0.0.1",
   "main": "./lib/",
   "description": "An AWS SQS wrapper providing high level helper methods.",
-  "homepage": "https://github.com/waldo/waldo-node-sqs",
-  "bugs": "https://github.com/waldo/waldo-node-sqs/issues",
+  "homepage": "https://github.com/waldo/node-sqs",
+  "bugs": "https://github.com/waldo/node-sqs/issues",
   "author": {
-    "name": "Awesome author",
-    "email": "awesome-email@gmail.com"
+    "name": "Thanasis Polychronakis",
+    "email": "thanasis@waldophotos.com"
   },
   "contributors": [
     ""
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/waldo/waldo-node-sqs"
+    "url": "https://github.com/waldo/node-sqs"
   },
   "license": "UNLICENSED",
   "engines": {
