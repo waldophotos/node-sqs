@@ -2,6 +2,8 @@
 
 > An AWS SQS wrapper providing high level helper methods.
 
+[![CircleCI](https://circleci.com/gh/waldophotos/node-sqs.svg?style=svg&circle-token=24885db15bd6856780089697a448d12ec09a2250)](https://circleci.com/gh/waldophotos/node-sqs)
+
 ## Install
 
 Install the module using NPM:
