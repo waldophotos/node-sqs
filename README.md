@@ -28,6 +28,15 @@ const sqs = sqsLib({
     concurrentOpsLimit: 10,
     logger: logger,
 });
+
+// Required
+sqs.init()
+    .then(function() {
+        console.log('SQS Ready.');
+    })
+    .catch(function(err) {
+        console.error('SQS Failed to connect:', err);
+    })
 ```
 
 * `sqsUrl` **String Required** The SQS url.
