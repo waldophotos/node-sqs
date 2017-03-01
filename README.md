@@ -126,6 +126,8 @@ sqs.purge()
 
 ## Release History
 
+- **v0.2.0**, *17 Jan 2017*
+    - Now supports consuming more than 10 concurrent jobs.
 - **v0.1.1**, *17 Jan 2017*
     - More robust disposing and check if instance is disposed.
 - **v0.1.0**, *17 Jan 2017*
