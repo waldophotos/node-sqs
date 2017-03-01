@@ -40,8 +40,14 @@ sqs.init()
 ```
 
 * `sqsUrl` **String Required** The SQS url.
-* `concurrentOpsLimit` **Number Required** Number of concurrent processing of incoming jobs.
+* `concurrentOpsLimit` **Number Required** Number of concurrent processing of incoming jobs, **Read notes bellow**.
 * `logger` **Object Required** An object containing the methods: info, warn, error.
+
+#### On Concurrency
+
+The AWS SQS library will only return up to 10 concurrent jobs per long-poll request as per their API. Special provisions had to be made in order to support more than 10 concurrent jobs consumptions so as to launch and monitor multiple long-poll requests. For this reason it is required that:
+
+> **Beyond 10 concurrent jobs you need to define in increments of 10. E.g. 20, 30, 40...**
 
 ### Creating SQS Jobs
 
@@ -120,6 +126,8 @@ sqs.purge()
 
 ## Release History
 
+- **v0.2.0**, *17 Jan 2017*
+    - Now supports consuming more than 10 concurrent jobs.
 - **v0.1.1**, *17 Jan 2017*
     - More robust disposing and check if instance is disposed.
 - **v0.1.0**, *17 Jan 2017*
