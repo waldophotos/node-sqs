@@ -126,6 +126,8 @@ sqs.purge()
 
 ## Release History
 
+- **v0.2.2**, *04 Mar 2017*
+    - Reduced logging verbosity.
 - **v0.2.1**, *03 Mar 2017*
     - Tweaked core loop.
 - **v0.2.0**, *02 Mar 2017*
